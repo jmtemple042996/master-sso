@@ -45,8 +45,8 @@ $client = new FingerprintApi(
 // Get a specific identification event
 try {
   list($model, $response) = $client->getEvent($input['fingerprint_request_id']);
-  echo "Status: " . $response_upd->getStatusCode();
-  echo "<pre>" . $model . "</pre>";
+
+  dd($model, $response);
 } catch (Exception $e) {
   echo $e->getMessage(), PHP_EOL;
 }

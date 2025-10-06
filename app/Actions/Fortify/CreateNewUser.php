@@ -35,6 +35,8 @@ $config = Configuration::getDefaultConfiguration(
   Configuration::REGION_GLOBAL // Replace with your region
 );
 
+//new
+
 $client = new FingerprintApi(
   new Client(),
   $config

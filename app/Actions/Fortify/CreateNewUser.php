@@ -46,7 +46,7 @@ $client = new FingerprintApi(
 try {
   list($model, $response) = $client->getEvent($input['fingerprint_request_id']);
 
-  dd($model, $response);
+  dd($model);
 } catch (Exception $e) {
   echo $e->getMessage(), PHP_EOL;
 }
